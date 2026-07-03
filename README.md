@@ -4,7 +4,7 @@
 This project was built while learning React and the useState hook. It focuses on state management, random number generation, and basic UI development with Tailwind CSS. Built with **React** to practice React fundamentals such as state management, event handling, arrays, objects, and conditional rendering.
 
 ### 📸 Screenshot
-    ![Project Screenshot](./assets/project-preview.png)
+![Project Screenshot](./assets/project-preview.png)
 
 ##  Features
 
