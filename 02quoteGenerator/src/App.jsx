@@ -77,10 +77,11 @@ function App() {
       <div className='flex flex-col gap-10  justify-center items-center'>
         <h1>Quote Generator</h1>
         <div className='bg-gray-500 text-white w-230 h-30 flex flex-col justify-center items-center gap-4  rounded-2xl'>
-
+          <p className='font-bold text-3xl'>{quotes[currentIndex].text}</p>
+          <h2 className=''>-{quotes[currentIndex].author}</h2>
         </div>
         <button
-
+          onClick={generateQuote}
           className='bg-red-500 text-white p-4 m-2  rounded-3xl hover:scale-110 hover:bg-red-800 ease-in duration-100 '>Generate</button>
       </div>
     </>
