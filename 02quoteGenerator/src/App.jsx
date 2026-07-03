@@ -71,7 +71,6 @@ function App() {
       Math.floor(Math.random() * (quotes.length - 1)) + 1
     )
   }
-
   return (
     <>
       <div className='flex flex-col gap-10  justify-center items-center'>
