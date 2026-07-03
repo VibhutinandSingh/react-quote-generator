@@ -52,7 +52,25 @@ function App() {
       author: "William Shakespeare"
     },
   ];
+  const [currentIndex, setCurrentIndex] = useState(0);
 
+  function generateQuote() {
+    let newIndex = randomNum();
+    while (newIndex == currentIndex) {
+      if (quotes.length <= 2) {
+        return
+      }
+      else
+        newIndex = randomNum();
+    }
+    setCurrentIndex(newIndex)
+  }
+
+  function randomNum() {
+    return (
+      Math.floor(Math.random() * (quotes.length - 1)) + 1
+    )
+  }
 
   return (
     <>
